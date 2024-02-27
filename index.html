@@ -8,55 +8,64 @@
 </head>
 <body>
     <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
+            <a href="index.html"><img src="/icons/Avatar.jpeg" alt="Me" id="avatar"></a>
+            <a href="#top">About</a>
+            <a href="#seeskills">Skills</a>
+            <a href="#seeprojects">Projects</a>
             <a href="#contact">Contact</a>
     </nav>
     <main>
         <section id="about">
             <h2></h2>
-            <p>
-                I'm a web developer with a passion for learning and creating. <br>
-                I'm currently learning React and I'm looking for a job as a junior developer.
+            <p id="bio">
+                As a 20-year-old student pursuing a degree in Big Data & Data Analysis,
+                I am driven by my insatiable curiosity and passion for coding and entrepreneurship. <br>
+                My journey into the world of data has been a thrilling adventure, filled with opportunities to explore, learn, and grow.
             </p>
+            <span id="seeskills"></span>
         </section>
         <section id="skills">
             <h2>Skills</h2>
             <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>MongoDB</li>
+                <li><img src="icons/html.png" alt="Html" class="skill"></li>
+                <li><img src="icons/css.png" alt="Css" class="skill"></li>
+                <li><img src="icons/js.png" alt="JavaScript" class="skill"></li>
+                <li><img src="icons/react.svg" alt="React" class="skill"></li>
+                <li><img src="icons/node.svg" alt="Node" class="skill"></li>
+                <li><img src="icons/bootstrap.png" alt="bootstrap" class="skill"></li>
+                <li><img src="icons/mongodb.svg" alt="MongoDB" class="skill"></li>
             </ul>
+            <span id="seeprojects"></span>
         </section>
+        
         <section id="projects">
             <h2>Projects</h2>
             <div class="project">
-                <h3>Project 1</h3>
-                <p>
-                    This is a project I made using HTML, CSS and JavaScript. It's a simple project but I'm proud of it.
+                <a href="https://github.com/AzyzHm/a-weather-app"><img src="icons/weatherapp.jpeg" alt="A weather app" class="project_image"></a>
+                <p class="project_description">
+                    Sky Weather is a simple and intuitive weather application that provides real-time weather information using data from OpenWeatherMap.
                 </p>
             </div>
             <div class="project">
-                <h3>Project 2</h3>
-                <p>
-                    This is a project I made using HTML, CSS and JavaScript. It's a simple project but I'm proud of it.
+                <a href="https://github.com/AzyzHm/A-Simple-Calculator"><img src="icons/calc.jpeg" alt="A-Simple-Calculator" class="project_image"></a>
+                <p class="project_description">
+                    A basic calculator web application built with HTML5, CSS, and JavaScript.
                 </p>
-            </div>
-            <div class="project">
-                <h3>Project 3</h3>
-                <p>
-                    This is a project I made using HTML, CSS and JavaScript. It's a simple project but I'm proud of it.
-                </p>
-            </div>
         </section>
     </main>
     <footer id="contact">
-        <h2>Send me a message!</h2>
+        <div id="left">
+            <h4>Contact:</h4>
+            <ul id="contact">
+                <li><a href="https://www.facebook.com/hammemiazyz/"><img src="icons/facebook.png" alt="facebook" class="social"></a></li>
+                <li><a href="https://twitter.com/MICoRaZoN/"><img src="icons/X.png" alt="x" class="social"></a></li>
+                <li><a href="https://www.linkedin.com/in/mohammed-aziz-hammemi-696b78263"><img src="icons/linkedin.png" alt="linkedin" class="social"></a></li>
+                <li><a href="https://github.com/AzyzHm/"><img src="icons/github.png" alt="github" class="social"></a></li>
+            </ul>
+            <p>+216 25 320 190</p>
+        </div>
+        <div id="right">
+            <h4>Send me a message</h4>
         <form action="submit">
             <div class="form-group">
                 <label for="name">Name</label>
@@ -72,6 +81,7 @@
             </div>
             <button type="submit">Send</button>
         </form>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
