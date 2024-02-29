@@ -218,5 +218,5 @@ footer {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 3s steps(100) 1s forwards infinite;
+    animation: typing 5s steps(100) 1s forwards infinite;
 }
