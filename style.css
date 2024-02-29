@@ -1,6 +1,6 @@
 :root {
     --nav: rgba(20, 20, 20, 0.2);
-    --background: linear-gradient(to bottom, hsl(300, 96%, 18%), hsl(0, 0%, 0%));
+    --background: linear-gradient(to bottom, hsl(300, 100%, 20%), hsl(0, 0%, 0%));
     --section: linear-gradient(to bottom,hsla(0, 0%, 50%,0.75),hsla(0, 0%, 75%,0.5));
 }
 
@@ -19,7 +19,7 @@ nav {
     justify-content: center;
     background-color: var(--nav);
     backdrop-filter: blur(10px);
-    padding: 0.5rem;
+    padding: 0.4rem;
 }
 
 nav a {
@@ -192,10 +192,13 @@ footer {
 }
 #about h2::after {
     content: '|';
-    animation: cursorBlink 0.5s Infinite alternate;
+    animation: cursorBlink 0.5s infinite alternate-reverse;
 }
 
 @keyframes cursorBlink {
+    from {
+        opacity: 1;
+    }
     to {
         opacity: 0;
     }
@@ -215,5 +218,5 @@ footer {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 3s steps(100) 1s forwards;
+    animation: typing 3s steps(100) 1s forwards infinite;
 }
