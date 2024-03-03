@@ -38,5 +38,5 @@ Open the `index.html` file in your preferred web browser to view the portfolio. 
 open index.html
 ```
 
-License
+## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
