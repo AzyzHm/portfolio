@@ -28,7 +28,7 @@ git clone https://github.com/AzyzHm/portfolio.git
 2. Navigate to the project directory:
 
 ```bash
-cd responsive-portfolio
+cd portfolio
 ```
 
 ## Usage
