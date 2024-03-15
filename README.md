@@ -22,7 +22,7 @@ Welcome to my responsive portfolio! This project showcases my skills and project
 1. Clone the repository to your local machine using:
 
 ```bash
-git clone https://github.com/your-username/responsive-portfolio.git
+git clone https://github.com/AzyzHm/portfolio.git
 ```
 
 2. Navigate to the project directory:
