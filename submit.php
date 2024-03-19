@@ -1,17 +1,19 @@
 <?php
-            // Replace these variables with your own database credentials
-            $servername = "localhost";
-            $username = "username";
-            $password = "password";
-            $dbname = "dbname";
-
-            // Create connection
-            $conn = new mysqli($servername, $username, $password, $dbname);
-
-            // Check connection
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
+           // PHP Data Objects(PDO) Sample Code:
+            try {
+                $conn = new PDO("sqlsrv:server = tcp:azyz-server.database.windows.net,1433; Database = Contact", "Azyz", "Test0110");
+                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             }
+            catch (PDOException $e) {
+                print("Error connecting to SQL Server.");
+                die(print_r($e));
+            }
+
+            // SQL Server Extension Sample Code:
+            $connectionInfo = array("UID" => "Azyz", "pwd" => "Test0110", "Database" => "Contact", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+            $serverName = "tcp:azyz-server.database.windows.net,1433";
+            $conn = sqlsrv_connect($serverName, $connectionInfo);
+        
 
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $name = $_POST['name'];
