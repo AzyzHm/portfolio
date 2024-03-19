@@ -19,7 +19,7 @@
                 $email = $_POST['email'];
                 $message = $_POST['message'];
 
-                $sql = "INSERT INTO messages (code, email, mesaage) VALUES ('$name', '$email', '$message')";
+                $sql = "INSERT INTO messages (username, email, mesaage) VALUES ('$name', '$email', '$message')";
 
                 if (sqlsrv_query($conn, $sql) === TRUE) {
                     echo '<script>alert("Message sent successfully!");</script>';
